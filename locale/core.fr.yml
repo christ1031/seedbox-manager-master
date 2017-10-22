@@ -1,0 +1,130 @@
+core:
+
+  layout:
+    information: Information
+    enable_javascript: |
+      Javascript n'est pas activé ou quelque chose empêche sa bonne exécution sur votre navigateur web.<br>
+      Pour pouvoir utiliser cette interface l'activation de javascript est nécessaire.
+    modal:
+      about_us: A propos
+      author: Application web par MThibault, Micdu70, Magicalex et Hydrog3n
+      contact_us: "Contacter les développeurs sur github : <a href=\"https://github.com/Magicalex/seedbox-manager/issues\" target=\"_blank\">https://github.com/Magicalex/seedbox-manager</a>"
+      version: Version
+      close: Fermer
+
+  header:
+    logout: Déconnexion
+    logout_message: Redirection vers {url}
+    about_us: A propos
+    administration: Administration
+    settings: Paramètres
+    support: Support
+
+  index:
+    dashboard: Tableau de bord
+    succes_reboot_rtorrent: Votre session rtorrent a été redémarré avec succès.
+    error_reboot_rtorrent: |
+      <h4>Un problème est survenu lors du redémarrage de rtorrent</h4>
+      <p>Il faut vérifier que <code>reboot-rtorrent</code> est correctement compilé</p>
+      <small>note : pour recompiler, veuillez utiliser le script install.sh</small>
+    log: Log
+    command_exec: commande exécutée
+    status: statut
+    result_command: résultat de la commande
+    new_version: Nouvelle version disponible !
+    participants: Participants
+    title_info_user: Information du compte utilisateur
+    ip_address: Votre adresse ip
+    disk_space: Espace disque
+    used: Utilisé :
+    available: Libre :
+    total: Total :
+    octet: O
+    kilo_octet: Ko
+    mega_octet: Mo
+    giga_octet: Go
+    tera_octet: To
+    peta_octet: Po
+    uptime_server: Temps de disponibilité du serveur
+    days: jours et
+    hours: h
+    minutes: min
+    load_average: Charge serveur
+    load_average_1: Charge moyenne depuis 1 min
+    load_average_5: Charge moyenne depuis 5 min
+    load_average_15: Charge moyenne depuis 15 min
+    info_load_good: Charge faible, conditions optimales
+    info_load_warning: Charge élévée, risque de ralentissement sur le serveur
+    info_load_danger: Charge très élévée, risque de gros ralentissement sur le serveur
+    title_access: Les accès FTP - SFTP - Transdroid
+    server_ftp: Serveur FTP et SFTP
+    address_ftp: Adresse (s)FTP
+    user_ftp: Utilisateur (s)FTP
+    port_ftp: Port FTP
+    port_sftp: Port sFTP
+    download_filezilla: Télécharger filezilla
+    configuration_file: Importer le fichier de configuration
+    app_transdroid: Application Transdroid
+    folder_scgi: Dossier SCGI
+    http_address: Adresse HTTP
+    user_transdroid: Utilisateur transdroid
+    download_transdroid: Télécharger Transdroid
+    restart_rtorrent: Redémarrer rtorrent
+    last_restart: Dernier redémarrage le
+    modal:
+      warning: Avertissement
+      do_you_want_restart: "&Ecirc;tes-vous sûr de vouloir redémarrer votre session rtorrent ?"
+      restart_with_irssi: Redémarrer irssi avec rtorrent
+      cancel: Annuler
+      restart: Redémarrer
+
+  settings:
+    setting_your_user: Paramètre utilisateur
+    success_update: Vos préférences ont été mises à jour avec succès.
+    impossible_to_update: Impossible de mettre à jour votre configuration !
+    check_rights: Vérifiez si vous avez les droits d'écriture.
+    setting_interface: Paramètres de l'interface
+    option_homepage: Options de la page d'accueil
+    enable_info_user: Activer les informations utilisateur
+    enable_access_ftp: "Activer les information d'accès ftp / sftp / transdroid"
+    enable_reboot_rtorrent: Activer le redémarrage rtorrent
+    option_logout: Option de déconnexion
+    url_to_redirect: url de redirection (pendant la déconnexion)
+    themes: Thèmes par defaut
+    choose_theme: choisir un thème
+    language: Langue par défaut
+    choose_language: choisir une langue
+    save: Enregistrer
+
+  admin:
+    administration_area: Espace administration
+    success_update: Les paramètres de l'utilisateur <strong>{username}</strong> a été mise à jour avec succès.
+    unable_to_update: Impossible de mettre à jour la configuration de l'utilisateur <strong>{username}</strong> !
+    success_delete_user: L'utilisateur <strong>{username}</strong> a été supprimé de Seedbox-Manager
+    error_delete_user: Impossible de supprimer l'utilisateur <strong>{username}</strong>.
+    list_user: Liste des utilisateurs
+    user: utilisateur
+    edit: éditer
+    delete: supprimer
+    setting_member: Paramètres de l'utilisateur
+    legend_setting_user: Paramètres utilisateur
+    home_directory: Dossier home de l'utilisateur
+    folder_scgi: Dossier scgi de l'utilisateur
+    legend_navbar: Barre de navigation
+    follow_rules: Suivez correctement la syntaxe pour ajouter des liens
+    legend_setting_server: Paramètres des serveurs FTP/sFTP
+    port_ftp: Port FTP
+    port_sftp: Port sFTP
+    legend_support: Support
+    address_mail : Adresse email
+    save: Enregistrer
+    modal:
+      delete_user: Suppression de l'utilisateur
+      body: |
+        <p>&Ecirc;tes-vous sûr de vouloir supprimer la configuration de cette utilisateur ?</p>
+        <p>Si votre utilisateur se connecte de nouveau, les fichiers de configuration seront regénéré automatiquement (avec une configuration par défaut)</p>
+      cancel: Annuler
+      delete: Supprimer
+
+  lang: fr
+  date: "d/m/y à H\\hi"

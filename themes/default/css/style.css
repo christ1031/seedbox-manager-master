@@ -1,0 +1,195 @@
+/* CODE CSS THEME DEFAULT */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../assets/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../assets/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../assets/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-moz-selection {
+  background: #ff3c78;
+  color: #fff;
+}
+
+::selection {
+  background: #ff3c78;
+  color: #fff;
+}
+
+body {
+  background: url('../assets/img/background.png');
+}
+
+ul {
+  color: #5a5a5a;
+}
+
+.marg {
+  padding: 15px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.fa, .glyphicon, .label {
+  margin-right: 4px;
+}
+
+button[data-dismiss="modal"] {
+  margin-right: 4px;
+}
+
+.dashboard {
+  margin-top: 5px !important;
+  margin-bottom: 20px !important;
+}
+
+.user {
+  font-weight: bold;
+}
+
+.fix-progress {
+  border: 1px solid rgba(0,0,0,.15);
+}
+
+.titre-head {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.trait {
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #fff;
+  height: 2px;
+  margin: 9px 1px;
+  overflow: hidden;
+}
+
+/* ajustement popup et formulaire */
+.modal-footer form {
+  display: inline-block;
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.btn-reboot{
+  margin-top: 20px;
+}
+
+#logout {
+  color: #b94a48;
+}
+
+.text-defaut-color {
+  color: #5a5a5a;
+}
+
+.textmodaleabout {
+  color: #646464;
+}
+
+.progress-bar {
+  min-width: 2em;
+}
+
+#load-info{
+  margin-top: 10px;
+}
+
+.uptime {
+  margin-top: 8px;
+}
+
+.load-average {
+  font-size: 11px;
+  cursor: default;
+}
+
+#popupfilezilla, #popuptransdroid {
+  margin-top: 4px;
+}
+
+#bloc-ftp li {
+  margin-bottom: 2px;
+}
+
+.fix-marg-input {
+  margin-bottom: 0;
+}
+
+.alert-sm {
+  padding: 7px;
+}
+
+fieldset {
+  border: 1px solid #b4b4b4;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+legend {
+  color: #5a5a5a;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-bottom: none;
+  width: auto;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+textarea {
+  margin-bottom: 15px;
+}
+
+.device {
+  color: #5a5a5a;
+}
+
+.device .fa-android {
+  font-size: 18px;
+}
+
+#jquery-loader {
+  background-color: transparent;
+  border: none;
+  width: 250px !important;
+}
+
+#jquery-loader p {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+#jquery-loader-background {
+  background-color: rgba(0,0,0,.9);
+}
+
+.modal-body label {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.modal-body label input {
+  margin-right: 2px;
+}
+
+/* install */
+
+#install {
+  margin-top: 50px;
+}
+
+code {
+  display: block;
+  padding: 6px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border-radius: 0;
+  margin-bottom: 10px;
+}

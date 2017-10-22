@@ -1,0 +1,13 @@
+{
+  "name": "seedbox-manager",
+  "version": "3.0.1",
+  "authors": [
+    "Magicalex <magicalex@mondedie.fr>"
+  ],
+  "description": "Web app for manage your seedbox",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.x",
+    "font-awsome": "4.x.x"
+  }
+}

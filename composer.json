@@ -1,0 +1,30 @@
+{
+    "name": "magicalex/seedbox-manager",
+    "description": "Web app for manage your seedbox",
+    "keywords": ["seedbox", "rtorrent"],
+    "license": "GPL-3.0",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.0",
+        "slim/slim": "^3.8",
+        "slim/flash": "^0.2.0",
+        "slim/twig-view": "^2.2",
+        "symfony/translation": "^3.2",
+        "symfony/twig-bridge": "^3.2",
+        "symfony/config": "^3.2",
+        "symfony/yaml": "^3.2",
+        "magicalex/write-ini-file": "^1.2",
+        "apfelbox/php-file-download": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "Magicalex",
+            "email": "magicalex@mondedie.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    }
+}

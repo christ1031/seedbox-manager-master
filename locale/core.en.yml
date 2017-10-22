@@ -1,0 +1,130 @@
+core:
+
+  layout:
+    information: Information
+    enable_javascript: |
+      Javascript isn't enabled or something stops it from running properly on your web browser<br>
+      To be able to use this interface, the activation of javascript is necessary
+    modal:
+      about_us: About us
+      author: Web apps by MThibault, Micdu70, Magicalex and Hydrog3n
+      contact_us: "Contact developers on github : <a href=\"https://github.com/Magicalex/seedbox-manager/issues\" target=\"_blank\">https://github.com/Magicalex/seedbox-manager</a>"
+      version: Version
+      close: Close
+
+  header:
+    logout: Log Out
+    logout_message: Redirection to {url}
+    about_us: About us
+    administration: Administration
+    settings: Settings
+    support: Support
+
+  index:
+    dashboard: Dashboard
+    succes_reboot_rtorrent: Your rtorrent session has been successfully started
+    error_reboot_rtorrent: |
+      <h4>A problem occurred while restarting rtorrent</h4>
+      <p>Check that the <code>reboot-rtorrent</code> is correctly compiled</p>
+      <small>note: to recompile, please use the install.sh script</small>
+    log: Log
+    command_exec: Command executed
+    status: status
+    result_command: result of the command
+    new_version: New version available !
+    participants: Participants
+    title_info_user: User account information
+    ip_address: Your ip address
+    disk_space: Disk space
+    used: Used:
+    available: Available:
+    total: Total:
+    octet: B
+    kilo_octet: KB
+    mega_octet: MB
+    giga_octet: GB
+    tera_octet: TB
+    peta_octet: PB
+    uptime_server: Server uptime
+    days: days and
+    hours: h
+    minutes: min
+    load_average: Server load
+    load_average_1: Load average since 1 min
+    load_average_5: Load average since 5 min
+    load_average_15: Load average since 15 min
+    info_load_good: Low load, optimum conditions
+    info_load_warning: High load, risk of slowing down on the server
+    info_load_danger: Very high load, risk of slowing down on the server
+    title_access: FTP / SFTP / Transdroid - Access
+    server_ftp: FTP and SFTP Server
+    address_ftp: Address (S)FTP
+    user_ftp: User (S)FTP
+    port_ftp: FTP port
+    port_sftp: SFTP port
+    download_filezilla: Download filezilla
+    configuration_file: Import configuration file
+    app_transdroid: Transdroid Application
+    folder_scgi: SCGI folder
+    http_address: HTTP Address
+    user_transdroid: User transdroid
+    download_transdroid: Download Transdroid
+    restart_rtorrent: Restart rtorrent
+    last_restart: Last restart on
+    modal:
+      warning: Warning
+      do_you_want_restart: Do you want to restart your rtorrent session ?
+      restart_with_irssi: Restart irssi with rtorrent
+      cancel: Cancel
+      restart: Restart
+
+  settings:
+    setting_your_user: User setting
+    success_update: Your preferences have been updated successfully
+    impossible_to_update: Unable to update your setting !
+    check_rights: Check if you have write permission
+    setting_interface: Interface Settings
+    option_homepage: Home page options
+    enable_info_user: Enable user information
+    enable_access_ftp: Enable FTP, SFTP, Transdroid access information
+    enable_reboot_rtorrent: Enable restarting rtorrent
+    option_logout: Log out option
+    url_to_redirect: Url redirection (during log out)
+    themes: Default themes
+    choose_theme: choose a theme
+    language: Default language
+    choose_language: choose a language
+    save: Save
+
+  admin:
+    administration_area: Administration area
+    success_update: The setting of user <strong>{username}</strong> have been successfully updated
+    unable_to_update: Unable to update user setting <strong>{username}</strong> !
+    success_delete_user: The user <strong>{username}</strong> has been removed from Seedbox-Manager
+    error_delete_user: Unable to delete user <strong>{username}</strong>
+    list_user: Users list
+    user: user
+    edit: edit
+    delete: delete
+    setting_member: User settings
+    legend_setting_user: User setting
+    home_directory: User home folder
+    folder_scgi: User scgi folder
+    legend_navbar: Navbar
+    follow_rules: Follow the syntax correctly to add links
+    legend_setting_server: SFTP FTP server settings
+    port_ftp: FTP port
+    port_sftp: SFTP port
+    legend_support: Support
+    address_mail : E-mail address
+    save: Save
+    modal:
+      delete_user: Deleting the user
+      body: |
+        <p>Are you sure you want to delete this user's configuration?</p>
+        <p>If your user logs in again the configuration files will be regenerated automatically (with a default configuration)</p>
+      cancel: Cancel
+      delete: Delete
+
+  lang: en
+  date: "d/m/y \\a\\t h:i a"

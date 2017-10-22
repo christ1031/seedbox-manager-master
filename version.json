@@ -1,0 +1,10 @@
+{
+  "name": "seedbox-manager",
+  "version": "3.0.1",
+  "contributors": "magicalex",
+  "news": [
+    "Correction de bug",
+    "Amélioration de la page d'installation",
+    "Voir les changements : https://github.com/Magicalex/seedbox-manager/compare/v3.0.0...master"
+  ]
+}

@@ -1,0 +1,78 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="{{ 'core.lang'|trans }}">
+    <head>
+        <meta charset="utf-8">
+        <title>Seedbox Manager</title>
+        <link type="text/css" rel="stylesheet" href="{{ path_for('home') }}assets/{{ user.theme }}.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1">
+    </head>
+    <body>
+        <header class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".phone-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path_for('home') }}">Seedbox Manager</a>
+                </div>
+                <nav class="collapse navbar-collapse phone-menu">
+                    <ul class="nav navbar-nav">
+                    {% for link in user.get_all_links %}
+                    <li class="nav-link"><a href="{{ link.url }}">{{ link.name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> {{ user.username }} <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path_for('setting') }}"><i class="fa fa-sliders" aria-hidden="true"></i> {{ 'core.header.settings'|trans }}</a></li>
+                                {% if user.isAdmin == true %}<li><a href="{{ path_for('admin') }}"><i class="fa fa-lock" aria-hidden="true"></i> {{ 'core.header.administration'|trans }}</a></li>{% endif %}
+                                <li><a href="mailto:{{ user.supportMail }}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ 'core.header.support'|trans }}</a></li>
+                                <li><a class="aboutlink" data-toggle="modal" href="#popupinfo"><i class="fa fa-info-circle" aria-hidden="true"></i> {{ 'core.header.about_us'|trans }}</a></li>
+                                <li>
+                                    <a id="logout" href="#logout" title="{{ 'core.header.logout'|trans }}" data-logouturl="{{ user.logoutUrl }}" data-logoutmessage="{{ 'core.header.logout_message'|trans({'{url}': user.logoutUrl }) }}">
+                                        <strong><i class="fa fa-sign-out" aria-hidden="true"></i> {{ 'core.header.logout'|trans }}</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container marg">
+            <noscript>
+                <div class="alert alert-info">
+                    <h4>{{ 'core.layout.information'|trans }}</h4>
+                    {{ 'core.layout.enable_javascript'|trans }}
+                </div>
+            </noscript>
+            {% block content %}{% endblock %}
+        </div>
+        <div class="modal fade" id="popupinfo" tabindex="-1" role="dialog" aria-labelledby="target-about-us" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="target-about-us">{{ 'core.layout.modal.about_us'|trans }}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="textmodaleabout">{{ 'core.layout.modal.author'|trans|raw }}</p>
+                        <p class="textmodaleabout">{{ 'core.layout.modal.contact_us'|trans|raw }}</p>
+                        <p class="textmodaleabout"><strong>{{ 'core.layout.modal.version'|trans }} {{ server.version }}</strong></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">{{ 'core.layout.modal.close'|trans }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block modal %}{% endblock %}
+    <script type="text/javascript" src="{{ path_for('home') }}assets/app.min.js"></script>
+    </body>
+</html>
+{% endspaceless %}
